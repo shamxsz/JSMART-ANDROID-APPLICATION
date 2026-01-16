@@ -1,0 +1,23 @@
+# Android Studio / IntelliJ
+*.iml
+.idea/
+.idea/**
+
+# Gradle
+.gradle/
+*/build/
+/app/build/
+
+# Local config
+local.properties
+
+# OS files
+.DS_Store
+
+# Android
+/captures
+.externalNativeBuild
+.cxx
+
+app/google-services.json
+app/src/google-services.json

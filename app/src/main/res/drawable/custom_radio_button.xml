@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Checked State (Selected) -->
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/white"/> <!-- Inner white dot -->
+                    <stroke android:width="2dp" android:color="@color/white"/> <!-- Outer ring -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Unchecked State (Not Selected) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/transparent"/> <!-- Transparent inner -->
+            <stroke android:width="2dp" android:color="@color/white"/> <!-- White outer ring -->
+        </shape>
+    </item>
+
+</selector>

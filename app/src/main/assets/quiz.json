@@ -1,0 +1,927 @@
+[
+  {
+    "id": 1,
+    "size": 10,
+    "title": "Introduction Quiz",
+    "questions": [
+      {
+        "question": "What is the most popular programming language in the world?",
+        "options": ["Python", "Java", "JavaScript", "C++"],
+        "correctAnswer": "JavaScript"
+      },
+      {
+        "question": "What is JavaScript mainly used for?",
+        "options": ["Designing databases", "Making web pages interactive", "Creating operating systems", "Managing network servers"],
+        "correctAnswer": "Making web pages interactive"
+      },
+      {
+        "question": "What is the abbreviation of JavaScript?",
+        "options": ["JS", "JVS", "JSP", "JSC"],
+        "correctAnswer": "JS"
+      },
+      {
+        "question": "What is JavaScript often referred to as?",
+        "options": ["The backbone of programming", "The default language of the internet", "The foundation of databases", "The core of artificial intelligence"],
+        "correctAnswer": "The default language of the internet"
+      },
+      {
+        "question": "Which of the following devices does JavaScript help power?",
+        "options": ["Smart TVs", "Refrigerators", "Washing machines", "Microscopes"],
+        "correctAnswer": "Smart TVs"
+      },
+      {
+        "question": "Apart from web development, where else is JavaScript used?",
+        "options": ["Operating system development","Game console design","Internet of Things (IoT) devices","Spacecraft navigation"],
+        "correctAnswer": "Internet of Things (IoT) devices"
+      },
+      {
+        "question": "Which of the following best describes JavaScript?",
+        "options": ["A database management tool","A programming language for interactive web pages","A server-side scripting language only","A cloud storage service"],
+        "correctAnswer": "A programming language for interactive web pages"
+      },
+      {
+        "question": "What type of apps can JavaScript help build?",
+        "options": ["Cross-platform apps","Only iOS apps","Only Android apps","Only desktop applications"],
+        "correctAnswer": "Cross-platform apps"
+      },
+      {
+        "question": "Why is JavaScript considered the default language of the internet?",
+        "options": ["It is used in most web browsers","It can replace all programming languages","It is the only language used for web development","It was the first programming language ever created"],
+        "correctAnswer": "It is used in most web browsers"
+      },
+      {
+        "question": "Which of the following is NOT a use of JavaScript?",
+        "options": ["Controlling web page behavior","Managing relational databases","Enhancing user interactivity on websites","Powering smart devices like TVs"],
+        "correctAnswer": "Managing relational databases"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "size": 20,
+    "title": "Quiz 1: Variables",
+    "questions": [
+      {
+        "question": "What is the correct way to declare a variable in modern JavaScript?",
+        "options": ["var x = 10;", "let x = 10;", "const x = 10;", "Both B and C"],
+        "correctAnswer": "Both B and C"
+      },
+      {
+        "question": "Which keyword should you use if you want a variable that cannot be changed?",
+        "options": ["let", "const;", "var", "static"],
+        "correctAnswer": "const;"
+      },
+      {
+        "question": "What will happen if you try to reassign a const variable?",
+        "options": ["It will update successfully", "It will throw an error", "It will change to null", "It will create a new variable"],
+        "correctAnswer": "It will throw an error"
+      },
+      {
+        "question": "Which of the following is NOT a valid variable name?",
+        "options": ["_name", "$amount", "2number", "firstName"],
+        "correctAnswer": "2number"
+      },
+      {
+        "question": "What will be the output of the following code? \nvar x = 5;\nvar x = 10;\nconsole.log(x);",
+        "options": ["5", "10", "Error", "Undefined"],
+        "correctAnswer": "10"
+      },
+      {
+        "question": "Which keyword allows block-scoped variables?",
+        "options": ["var", "let", "const", "Both B and C"],
+        "correctAnswer": "Both B and C"
+      },
+      {
+        "question": "What will happen in this case? \nconsole.log(x);\nvar x = 5;",
+        "options": ["5", "Undefined", "Error", "null"],
+        "correctAnswer": "Undefined"
+      }
+      ,{
+        "question": "Which keyword is function-scoped rather than block-scoped?",
+        "options": ["let", "var", "const", "static"],
+        "correctAnswer": "var"
+      },
+      {
+        "question": "What is the correct way to declare a constant variable?",
+        "options": ["constant PI = 3.14;", "const PI = 3.14;", "let PI = 3.14;", "var PI = 3.14;"],
+        "correctAnswer": "const PI = 3.14;"
+      },
+      {
+        "question": "What is variable hoisting in JavaScript?",
+        "options": ["Moving variables to the bottom of the script", "Declaring a variable after using it", "A method to optimize variables\n", "A way to store global variables"],
+        "correctAnswer": "Declaring a variable after using it"
+      },
+      {
+        "question": "What will be the output of the following? \nconsole.log(y);\nlet y = 20;",
+        "options": ["20", "Undefined", "Error", "null"],
+        "correctAnswer": "Error"
+      },
+      {
+        "question": "What will console.log(typeof x); print if x is not declared?",
+        "options": ["undefined", "null", "error", "NaN"],
+        "correctAnswer": "undefined"
+      }
+    ,{
+        "question": "Which of the following statements is correct?",
+        "options": ["Variables declared with var can be redeclared", "Variables declared with const can be reassigned", "Variables declared with let are globally scoped", "JavaScript does not allow declaring variables"],
+        "correctAnswer": "Variables declared with var can be redeclared"
+      },
+      {
+        "question": "What will be the output?\nlet a;\nconsole.log(a);",
+        "options": ["null", "undefined", "0", "Error"],
+        "correctAnswer": "undefined"
+      },
+      {
+        "question": "Which of the following is true?",
+        "options": ["const variables can be reassigned", "let is block-scoped", "var is block-scoped", "let is function-scoped"],
+        "correctAnswer": "let is block-scoped"
+      },
+      {
+        "question": "What happens if you use const to declare an object and modify its properties?",
+        "options": ["It will throw an error", "It will allow modification", "It will delete the object", "It will reassign the object"],
+        "correctAnswer": "It will allow modification"
+      },
+      {
+        "question": "Which of the following is NOT a valid way to declare a variable?",
+        "options": ["let number = 10;", "const $price = 50;", "var 1stValue = 100; ", "let _name = \"John\";"],
+        "correctAnswer": "var 1stValue = 100; "
+      }
+    ,{
+        "question": "What will be the output?\nlet x = 10;\nx = 20;\nconsole.log(x);",
+        "options": ["10", "20", "Error", "undefined"],
+        "correctAnswer": "20"
+      },
+      {
+        "question": "What happens when you declare a variable using var inside a function?",
+        "options": ["It becomes global", "It is function-scoped", "It is block-scoped\n", "It cannot be accessed"],
+        "correctAnswer": "It is function-scoped"
+      },
+      {
+        "question": "What is the best practice for declaring variables in modern JavaScript?",
+        "options": ["Use var for everything", "Use const by default, let if reassignment is needed", "Use let always", "Use var for numbers, const for strings"],
+        "correctAnswer": "Use const by default, let if reassignment is needed"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "size": 20,
+    "title": "Quiz 2: Strings",
+    "questions": [
+      {
+        "question": "How do you correctly declare a string in JavaScript?",
+        "options": ["let text = Hello;", "let text = \"Hello\";", "let text = Hello World;", "let text = Hello, \"World\";"],
+        "correctAnswer": "let text = \"Hello\";"
+      },
+      {
+        "question": "What will be the output of the following code?",
+        "options": ["10", "11", "9", "Error"],
+        "correctAnswer": "10"
+      }
+    ,{
+        "question": "What does toUpperCase() do",
+        "options": ["Converts a string to lowercase", "Converts a string to uppercase", "Capitalizes only the first letter", "Reverses the string"],
+        "correctAnswer": "Converts a string to uppercase"
+      },
+      {
+        "question": "What will be the output of the following?\nconsole.log(\"hello\".toUpperCase());",
+        "options": ["HELLO", "hello", "error", "undefined"],
+        "correctAnswer": "HELLO"
+      },
+      {
+        "question": "How can you find the position of the word \"code\" in the string \"Learn to code\"?",
+        "options": ["\"Learn to code\".search(\"code\")", "\"Learn to code\".indexOf(\"code\") ", "\"Learn to code\".find(\"code\")", "\"Learn to code\".position(\"code\")"],
+        "correctAnswer": "\"Learn to code\".indexOf(\"code\")"
+      },
+      {
+        "question": "What is the result of console.log(\"apple\".charAt(2));?",
+        "options": ["a", "p", "l", "e"],
+        "correctAnswer": "p"
+      },
+      {
+        "question": "What will be the output?\nconsole.log(\"JavaScript\".slice(4, 10));",
+        "options": ["Script", "JavaSc", "vaScri", "Error"],
+        "correctAnswer": "Script"
+      }
+    ,{
+        "question": "What does trim() do?",
+        "options": ["Removes spaces at the beginning and end of a string", "Removes all spaces in a string", "Converts the string to lowercase", "Checks if a string contains numbers"],
+        "correctAnswer": "Removes spaces at the beginning and end of a string"
+      },
+      {
+        "question": "What will be the output of this code?\nconsole.log(\"hello world\".replace(\"world\", \"JavaScript\"));",
+        "options": ["hello JavaScript", "hello", "JavaScript world", "Error"],
+        "correctAnswer": "hello JavaScript"
+      },
+      {
+        "question": "Which method checks if a string contains a specific word?",
+        "options": ["contains()", "includes()", "hasWord()", "searchFor()"],
+        "correctAnswer": "includes()"
+      },
+      {
+        "question": "What is the output of console.log(\"Welcome\".toLowerCase());?",
+        "options": ["welcome", "WELCOME", "Welcome", "error"],
+        "correctAnswer": "welcome"
+      },
+      {
+        "question": "How can you concatenate \"Hello\" and \"World\" correctly?",
+        "options": ["\"Hello\" + \"World\"", "\"Hello\" - \"World\"", "\"Hello\" * \"World\"", "\"Hello\" & \"World\""],
+        "correctAnswer": "\"Hello\" + \"World\""
+      }
+    ,{
+        "question": "What will be the output?\nconsole.log(\"JavaScript\".substring(4, 10));",
+        "options": ["Script", "vaScri", "JavaSc", "JavaScript"],
+        "correctAnswer": "Script"
+      },
+      {
+        "question": "What happens when console.log(\"apple\".indexOf(\"p\")) is executed?",
+        "options": ["1", "2", "0", "-1"],
+        "correctAnswer": "1"
+      },
+      {
+        "question": "What is the result of console.log(\"banana\".lastIndexOf(\"a\"));?",
+        "options": ["1", "3", "5", "Error"],
+        "correctAnswer": "5"
+      },
+      {
+        "question": "What does \"Hello\".repeat(3) return?",
+        "options": ["HelloHelloHello", "Hello Hello Hello", "Hello, Hello, Hello", "Error"],
+        "correctAnswer": "HelloHelloHello"
+      },
+      {
+        "question": "What will be the output of console.log(\"Hello\".charAt(10));?",
+        "options": ["\"o\"", "\" \" (empty space)", "\"\" (empty string)", "Error"],
+        "correctAnswer": "\"\" (empty string)"
+      }
+    ,{
+        "question": "What does split() do in JavaScript?",
+        "options": ["Divides a string into an array", "Merges two strings", "Removes spaces in a string", "Finds a character in a string"],
+        "correctAnswer": "Divides a string into an array"
+      },
+      {
+        "question": "What is the output of the following?\nconsole.log(\"hello\".includes(\"ll\"));",
+        "options": ["true", "false", "Error", "\"11\""],
+        "correctAnswer": "true"
+      },
+      {
+        "question": "What will happen if you forget to use quotes around a string?",
+        "options": ["The program will still work", "It will be treated as a number", "It will throw an error", "It will automatically add quotes"],
+        "correctAnswer": "It will throw an error"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "size": 10,
+    "title": "Quiz 3: Functions",
+    "questions": [
+      {
+        "question": "What keyword do we use to make a function in JavaScript?",
+        "options": ["func", "make", "function", "code"],
+        "correctAnswer": "function"
+      },
+      {
+        "question": "What do we call the names inside the parentheses () of a function?",
+        "options": ["Words", "Parameters", "Sentences", "Methods"],
+        "correctAnswer": "Parameters"
+      },
+      {
+        "question": "What will multiply(2, 3) show if the function is return a * b?",
+        "options": ["5", "6", "8", "9"],
+        "correctAnswer": "6"
+      },
+      {
+        "question": "What symbol is used to multiply numbers in JavaScript?",
+        "options": ["x", "*", "/", ":"],
+        "correctAnswer": "*"
+      },
+      {
+        "question": "What does return do inside a function?",
+        "options": ["It gives the answer back", "It repeats the code", "It erases data", "It makes a loop"],
+        "correctAnswer": "It gives the answer back"
+      },
+      {
+        "question": "What kind of value can a function give back?",
+        "options": ["Only numbers", "Only text", "Any value like numbers or text", "Nothing"],
+        "correctAnswer": "Any value like numbers or text"
+      },
+      {
+        "question": "Where does a variable inside a function work?",
+        "options": ["Only inside that function", "Everywhere in the program", "Only in other functions", "Only in the console"],
+        "correctAnswer": "Only inside that function"
+      },
+      {
+        "question": "What happens if you just type the function name without parentheses ()?",
+        "options": ["It shows the code of the function", "It runs automatically", "It gives an error", "It shows 0"],
+        "correctAnswer": "It shows the code of the function"
+      },
+      {
+        "question": "What does the function milesToKilometres() do?",
+        "options": ["It changes kilometres to miles", "It changes miles to kilometres", "It adds two numbers", "It shows your name"],
+        "correctAnswer": "It changes miles to kilometres"
+      },
+      {
+        "question": "Why are functions useful?",
+        "options": ["They make code shorter and easier to reuse", "They make programs longer", "They delete data", "They stop the program"],
+        "correctAnswer": "They make code shorter and easier to reuse"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "size": 10,
+    "title": "Quiz 4: Conditions",
+    "questions": [
+      {
+        "question": "What is the main purpose of a condition in JavaScript?",
+        "options": ["To repeat code", "To make decisions in the program", "To store information", "To stop a function"],
+        "correctAnswer": "To make decisions in the program"
+      },
+      {
+        "question": "What keyword do we use to test a condition?",
+        "options": ["check", "test", "if", "condition"],
+        "correctAnswer": "if"
+      },
+      {
+        "question": "What does the keyword else mean in an if–else statement?",
+        "options": ["Run when the first test is true", "Run when all tests are false", "Run only at the start of a program", "Stop the program"],
+        "correctAnswer": "Run when all tests are false"
+      },
+      {
+        "question": "Which of the following symbols means “equal to”?",
+        "options": ["=", "==", "<", ">"],
+        "correctAnswer": "=="
+      },
+      {
+        "question": "What symbol means “greater than”?",
+        "options": ["<", ">", "<=", "!="],
+        "correctAnswer": ">"
+      },
+      {
+        "question": "What will this code show?\nif (5 < 10) {\n   console.log(\"True!\");\n}\n",
+        "options": ["It will show “True!”", "It will show “False!”", "It will show nothing", "It will show an error"],
+        "correctAnswer": "It will show “True!”"
+      },
+      {
+        "question": "What happens if the condition in an if statement is false?",
+        "options": ["The code inside the if runs", "The program stops", "The code inside else runs", "It repeats the code"],
+        "correctAnswer": "The code inside else runs"
+      },
+      {
+        "question": "In this example, when will the message “a equals b” appear?\nif (a < b) {\n   console.log(\"a is less\");\n} else if (a == b) {\n   console.log(\"a equals b\");\n} else {\n   console.log(\"a is greater\");\n}\n",
+        "options": ["When a and b are the same", "When a is smaller", "When a is bigger", "When both are not numbers"],
+        "correctAnswer": "When a and b are the same"
+      },
+      {
+        "question": "What is the short way to write a simple if–else statement called?",
+        "options": ["Loop", "Function", "Ternary operator", "Event"],
+        "correctAnswer": "Ternary operator"
+      },
+      {
+        "question": "Why are conditions important in programming?",
+        "options": ["They let programs make choices", "They make code longer", "They remove variables", "They stop loops"],
+        "correctAnswer": "They let programs make choices"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "size": 10,
+    "title": "Quiz 5: ARRAYS",
+    "questions": [
+      {
+        "question": "What is an array used for in JavaScript?",
+        "options": ["To store one value only", "To store many values in one variable", "To delete data", "To compare two numbers"],
+        "correctAnswer": "To store many values in one variable"
+      },
+      {
+        "question": "How do you create an array in JavaScript?",
+        "options": ["let cars = \"Saab\", \"Volvo\", \"BMW\";", "let cars = [\"Saab\", \"Volvo\", \"BMW\"];", "let cars = {Saab, Volvo, BMW};", "let cars = (Saab, Volvo, BMW);"],
+        "correctAnswer": "let cars = [\"Saab\", \"Volvo\", \"BMW\"];"
+      },
+      {
+        "question": "What is the first position number (index) in an array?",
+        "options": ["1", "0", "10", "-1"],
+        "correctAnswer": "0"
+      },
+      {
+        "question": "What do we call the position number of each value in an array?",
+        "options": ["Place", "Item", "Index", "Value"],
+        "correctAnswer": "Index"
+      },
+      {
+        "question": "What can arrays store?",
+        "options": ["Only numbers", "Only text", "Many values like numbers or text", "Only functions"],
+        "correctAnswer": "Many values like numbers or text"
+      },
+      {
+        "question": "What property tells how many items are inside an array?",
+        "options": [".count", ".total", ".length", ".index"],
+        "correctAnswer": ".length"
+      },
+      {
+        "question": "What will this code display?\nlet cars = [\"Saab\", \"Volvo\", \"BMW\"];\nconsole.log(cars[1]);\n",
+        "options": ["Saab", "Volvo", "BMW", "Opel"],
+        "correctAnswer": "Volvo"
+      },
+      {
+        "question": "What will this line of code show?\nconsole.log(cars[cars.length - 1]);\n",
+        "options": ["The first value", "The middle value", "The last value", "An error message"],
+        "correctAnswer": "The last value"
+      },
+      {
+        "question": "What happens if you change a value in an array using its index?",
+        "options": ["The array disappears", "Only that item changes", "The array doubles", "All values change"],
+        "correctAnswer": "Only that item changes"
+      },
+      {
+        "question": "Why are arrays useful in programming?",
+        "options": ["They make it easy to group and manage data", "They make the program slower", "They can only store one item", "They delete old information"],
+        "correctAnswer": "They make it easy to group and manage data"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "size": 10,
+    "title": "Quiz 6: OBJECTS",
+    "questions": [
+      {
+        "question": "What is an object in JavaScript used for?",
+        "options": ["To store only one value", "To store many related values together", "To delete variables", "To repeat loops"],
+        "correctAnswer": "To store many related values together"
+      },
+      {
+        "question": "What are the two parts of each item in an object?",
+        "options": ["Number and value", "Name and value", "Loop and function", "Word and string"],
+        "correctAnswer": "Name and value"
+      },
+      {
+        "question": "What symbols are used to create an object?",
+        "options": ["[]", "()", "{}", "<>"],
+        "correctAnswer": "{}"
+      },
+      {
+        "question": "What do we call the name part of an object’s property?",
+        "options": ["Value", "Key or property name", "Loop", "Function"],
+        "correctAnswer": "Key or property name"
+      },
+      {
+        "question": "What kind of data can an object hold?",
+        "options": ["Only text values", "Only numbers", "Many types like text, numbers, or even other objects", "Only arrays"],
+        "correctAnswer": "Many types like text, numbers, or even other objects"
+      },
+      {
+        "question": "What do we call a function that is written inside an object?",
+        "options": ["Method", "Event", "Condition", "Property"],
+        "correctAnswer": "Method"
+      },
+      {
+        "question": "What can you do with object properties?",
+        "options": ["Only read them", "Add, change, or delete them", "Use them once only", "Lock them forever"],
+        "correctAnswer": "Add, change, or delete them"
+      },
+      {
+        "question": "How do objects help in programming?",
+        "options": ["They make code confusing", "They organize data and keep it in one place", "They delete other variables", "They stop loops from running"],
+        "correctAnswer": "They organize data and keep it in one place"
+      },
+      {
+        "question": "What can an object represent in real life?",
+        "options": ["A color or number only", "Anything, like a car, student, or product", "Only computer parts", "Only text values"],
+        "correctAnswer": "Anything, like a car, student, or product"
+      },
+      {
+        "question": "What is one main advantage of using objects?",
+        "options": ["They make data easy to organize and use", "They slow down programs", "They remove arrays", "They stop conditions"],
+        "correctAnswer": "They make data easy to organize and use"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "size": 10,
+    "title": "Quiz 7: LOOPS",
+    "questions": [
+      {
+        "question": "What is the main purpose of a loop in JavaScript?",
+        "options": ["To stop code from running", "To repeat a block of code automatically", "To delete data", "To create objects"],
+        "correctAnswer": "To repeat a block of code automatically"
+      },
+      {
+        "question": "When does a loop stop running?",
+        "options": ["When the condition becomes false", "When the code ends", "When it repeats 100 times", "When the user presses stop"],
+        "correctAnswer": "When the condition becomes false"
+      },
+      {
+        "question": "Which type of loop repeats a set number of times?",
+        "options": ["while loop", "for loop", "do...while loop", "break loop"],
+        "correctAnswer": "for loop"
+      },
+      {
+        "question": "What are the three parts of a for loop?",
+        "options": ["Start, condition, and update", "If, else, and end", "Begin, stop, and finish", "Open, close, and repeat"],
+        "correctAnswer": "Start, condition, and update"
+      },
+      {
+        "question": "What does a while loop do?",
+        "options": ["Runs once only", "Runs while a condition is true", "Runs after a loop ends", "Stops the code"],
+        "correctAnswer": "Runs while a condition is true"
+      },
+      {
+        "question": "How many times will a do…while loop run before checking the condition?",
+        "options": ["Zero times", "One time", "Two times", "Never"],
+        "correctAnswer": "One time"
+      },
+      {
+        "question": "What keyword can stop a loop before it finishes?",
+        "options": ["end", "continue", "break", "return"],
+        "correctAnswer": "break"
+      },
+      {
+        "question": "What keyword skips one loop step and continues to the next?",
+        "options": ["skip", "continue", "stop", "next"],
+        "correctAnswer": "continue"
+      },
+      {
+        "question": "Which loop will always run at least once?",
+        "options": ["for loop", "while loop", "do...while loop", "stop loop"],
+        "correctAnswer": "do...while loop"
+      },
+      {
+        "question": "Why are loops important in programming?",
+        "options": ["They make code shorter and easier to manage", "They slow down the program", "They remove conditions", "They replace functions"],
+        "correctAnswer": "They make code shorter and easier to manage"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "size": 15,
+    "title": "Quiz 8: CLASSES",
+    "questions": [
+      {
+        "question": "What keyword is used to create a class in JavaScript?",
+        "options": ["object", "class", "function", "new"],
+        "correctAnswer": "class"
+      },
+      {
+        "question": "What special function inside a class is used to initialize values?",
+        "options": ["initializer()", "setup()", "constructor()", "start()"],
+        "correctAnswer": "constructor()"
+      },
+      {
+        "question": "What does the this keyword refer to inside a class?",
+        "options": ["The window object", "The current class file", "The current object or instance", "A variable outside the class"],
+        "correctAnswer": "The current object or instance"
+      },
+      {
+        "question": "How do you create a new instance (object) from a class named Car?",
+        "options": ["Car()", "let car = Car;", "new Car()", "Car.new()"],
+        "correctAnswer": "new Car()"
+      },
+      {
+        "question": "What will rect1.area return if width = 10 and height = 5 in the class?",
+        "options": ["50", "15", "10x5", "undefined"],
+        "correctAnswer": "50"
+      },
+      {
+        "question": "Which keyword is used to create a property that automatically calculates its value?",
+        "options": ["auto", "get", "return", "calc"],
+        "correctAnswer": "get"
+      },
+      {
+        "question": "Which of these correctly defines a method inside a class?",
+        "options": ["function move(x, y) { ... }", "move(x, y) { ... }", "method move(x, y) { ... }", "const move = function(x, y) { ... }"],
+        "correctAnswer": "move(x, y) { ... }"
+      },
+      {
+        "question": "What happens when you forget to use this before a property name inside a class?\n",
+        "options": ["It will still work normally", "It will cause an error or refer to a local variable", "It makes the property global", "It will automatically fix itself"],
+        "correctAnswer": "It will cause an error or refer to a local variable"
+      },
+      {
+        "question": "In const pt = new Point(20, 65);, what does Point represent?",
+        "options": ["A variable", "A function", "A class", "A number"],
+        "correctAnswer": "A class"
+      },
+      {
+        "question": "What is the correct way to access the width of a rectangle object named rect1?",
+        "options": ["rect1(width)", "rect1.width", "rect1.get(width)", "rect1.width()"],
+        "correctAnswer": "rect1.width"
+      },
+      {
+        "question": "A class can have only one method.",
+        "options": ["True", "False"],
+        "correctAnswer": "False"
+      },
+      {
+        "question": " The constructor() function runs automatically when a new object is made.",
+        "options": ["True", "False"],
+        "correctAnswer": "True"
+      },
+      {
+        "question": " this.x means the same as “the x property of the current object.”",
+        "options": ["True", "False"],
+        "correctAnswer": "True"
+      },
+      {
+        "question": "Getter properties are called with parentheses like area().",
+        "options": ["True", "False"],
+        "correctAnswer": "False"
+      },
+      {
+        "question": " Classes help organize code by connecting data and actions together.",
+        "options": ["True", "False"],
+        "correctAnswer": "True"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "size": 12,
+    "title": "Quiz 9: MODULES",
+    "questions": [
+      {
+        "question": "What is the main purpose of JavaScript modules?",
+        "options": ["To style HTML pages", "To organize and reuse code", "To add animations", "To create databases"],
+        "correctAnswer": "To organize and reuse code"
+      },
+      {
+        "question": "Which keyword is used to export a single item from a module?",
+        "options": ["export", "default", "export default", "import default"],
+        "correctAnswer": "export default"
+      },
+      {
+        "question": "Which keyword is used to export multiple items from a module?",
+        "options": ["export all", "export", "module.export", "require"],
+        "correctAnswer": "export"
+      },
+      {
+        "question": "How do you import a default export?",
+        "options": ["import { name } from './module.js'", "import name from './module.js'", "import * as name from './module.js'", "require('./module.js')"],
+        "correctAnswer": "import name from './module.js'"
+      },
+      {
+        "question": "How do you import a named export?",
+        "options": ["import name from './module.js'", "import { name } from './module.js'", "import all from './module.js'", "require('./module.js')"],
+        "correctAnswer": "import { name } from './module.js'"
+      },
+      {
+        "question": "Can a module have more than one default export?",
+        "options": ["Yes", "No", "Only if it’s imported correctly", "Only for variables"],
+        "correctAnswer": "No"
+      },
+      {
+        "question": "What file extension is commonly used for JavaScript modules?",
+        "options": [".html", ".css", ".js", ".json"],
+        "correctAnswer": ".js"
+      },
+      {
+        "question": "What keyword makes a function or variable available outside its module?",
+        "options": ["include", "return", "export", "global"],
+        "correctAnswer": "export"
+      },
+      {
+        "question": "How do you rename an imported item?",
+        "options": ["import { oldName = newName } from './module.js'", "import { oldName as newName } from './module.js'", "import { newName to oldName } from './module.js'", "import rename oldName from './module.js'"],
+        "correctAnswer": "import { oldName as newName } from './module.js'"
+      },
+      {
+        "question": "How do you import everything from a module as an object?",
+        "options": ["import * as name from './module.js'", "import all from './module.js'", "import everything from './module.js'", "require('./module.js')"],
+        "correctAnswer": "import * as name from './module.js'"
+      },
+      {
+        "question": "Which HTML tag attribute is needed to load a module file?",
+        "options": ["<script src=\"module.js\"></script>", "<script type=\"module\" src=\"module.js\"></script>", "<script module=\"true\"></script>", "<script src=\"module\"></script>"],
+        "correctAnswer": "<script type=\"module\" src=\"module.js\"></script>"
+      },
+      {
+        "question": "Where are modules usually stored in a project?",
+        "options": ["In the /img folder", "In a /modules or /js folder", "In the root directory only", "In the /assets folder"],
+        "correctAnswer": "In a /modules or /js folder"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "size": 10,
+    "title": "Quiz 10: SCOPE",
+    "questions": [
+      {
+        "question": "What does “scope” mean in JavaScript?",
+        "options": ["The size of your code", "Where a variable can be accessed", "The speed of your program", "How a function is declared"],
+        "correctAnswer": "Where a variable can be accessed"
+      },
+      {
+        "question": "A variable declared outside any function has what type of scope?",
+        "options": ["Local", "Block", "Global", "Private"],
+        "correctAnswer": "Global"
+      },
+      {
+        "question": "Why should global variables be avoided?",
+        "options": ["They can be deleted", "They are too slow", "They can cause conflicts and are harder to manage", "They can’t be printed"],
+        "correctAnswer": "They can cause conflicts and are harder to manage"
+      },
+      {
+        "question": "Which keyword creates a block-scoped variable?",
+        "options": ["var", "const", "let", "Both B and C"],
+        "correctAnswer": "Both B and C"
+      },
+      {
+        "question": "What happens when you try to use a variable outside its scope?",
+        "options": ["It resets to 0", "It gives undefined", "It throws an error", "It works normally"],
+        "correctAnswer": "It throws an error"
+      },
+      {
+        "question": "What is used to handle code errors safely?",
+        "options": ["if...else", "try...catch", "throw", "catch...try"],
+        "correctAnswer": "try...catch"
+      },
+      {
+        "question": "In a try...catch block, where do you put the code that might cause an error?",
+        "options": ["Inside catch", "Before the try", "Inside try", "After catch"],
+        "correctAnswer": "Inside try"
+      },
+      {
+        "question": "What does this refer to inside a class method?",
+        "options": ["The window object", "The current class object", "The parent class", "A random variable"],
+        "correctAnswer": "The current class object"
+      },
+      {
+        "question": "Why use .bind(this) in event listeners?",
+        "options": ["To stop the event", "To make this refer to the class", "To remove the event listener", "To log errors"],
+        "correctAnswer": "To make this refer to the class"
+      },
+      {
+        "question": "What does the arrow function fix in scope?",
+        "options": ["Event handling", "The meaning of this", "Function names", "Variable declaration"],
+        "correctAnswer": "The meaning of this"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "size": 10,
+    "title": "Quiz 11: MATH",
+    "questions": [
+      {
+        "question": "What does the Vec class represent?",
+        "options": ["A text string", "A vector with x and y components", "A color value", "A number list"],
+        "correctAnswer": "A vector with x and y components"
+      },
+      {
+        "question": "What are the default values of x and y in Vec if no arguments are given?",
+        "options": ["1 and 1", "0 and 0", "Undefined", "Random numbers"],
+        "correctAnswer": "0 and 0"
+      },
+      {
+        "question": "What formula is used to find distance between two points?",
+        "options": ["x + y", "Pythagorean theorem", "Average formula", "Tangent formula"],
+        "correctAnswer": "Pythagorean theorem"
+      },
+      {
+        "question": "What does Math.sqrt(25) return?",
+        "options": ["5", "25", "10", "125"],
+        "correctAnswer": "5"
+      },
+      {
+        "question": "The method toFixed(2) does what?",
+        "options": ["Rounds a number to the nearest whole number", "Fixes a code error", "Limits decimal places to 2", "Converts a number to a string"],
+        "correctAnswer": "Limits decimal places to 2"
+      },
+      {
+        "question": "What does Math.abs(-3) return?",
+        "options": ["-3", "0", "3", "1"],
+        "correctAnswer": "3"
+      },
+      {
+        "question": "Which method finds the angle of a vector?",
+        "options": ["Math.sin()", "Math.atan2()", "Math.PI()", "Math.sqrt()"],
+        "correctAnswer": "Math.atan2()"
+      },
+      {
+        "question": "How many radians are in one full circle?",
+        "options": ["π", " π/2", "2π", "360"],
+        "correctAnswer": "2π"
+      },
+      {
+        "question": "What does Math.PI represent?",
+        "options": ["2.5", "3.14159...", "1.618", "6.28"],
+        "correctAnswer": "3.14159..."
+      },
+      {
+        "question": "To convert radians to degrees, multiply by:",
+        "options": ["π / 180", "180 / π", "π × 180", "180 + π"],
+        "correctAnswer": "180 / π"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "size": 20,
+    "title": "Quiz 12: JSON",
+    "questions": [
+      {
+        "question": "What does JSON stand for?",
+        "options": ["Java Source Object Notation", "JavaScript Object Notation", "Java Syntax Object Name", "Java System Output Name"],
+        "correctAnswer": "JavaScript Object Notation"
+      },
+      {
+        "question": "What type of file is a JSON file?",
+        "options": ["Image File", "Text File", "Audio File", "Video file"],
+        "correctAnswer": "Text File"
+      },
+      {
+        "question": "What symbol indicates that a JSON file contains an array?",
+        "options": ["{ }", "[ ]", "( )", "< >"],
+        "correctAnswer": "[ ]"
+      },
+      {
+        "question": "What symbol indicates that a JSON file contains an object?",
+        "options": ["{ }", "[ ]", "( )", "< >"],
+        "correctAnswer": "{ }"
+      },
+      {
+        "question": "What function is used in JavaScript to load JSON data from a file?",
+        "options": ["load()", "fetch()", "getData()", "read()"],
+        "correctAnswer": "fetch()"
+      },
+      {
+        "question": "What does fetch() return?",
+        "options": ["A Promise", "A String", "An Array", "A File"],
+        "correctAnswer": "A Promise"
+      },
+      {
+        "question": "What method is used to handle successful fetch results?",
+        "options": [".done()", ".then()", ".next()", ".success()"],
+        "correctAnswer": ".then()"
+      },
+      {
+        "question": "What method is used to handle errors in a Promise?",
+        "options": [".finally()", ".catch()", ".error()", ".fail()"],
+        "correctAnswer": ".catch()"
+      },
+      {
+        "question": "What does .json() do in a fetch call?",
+        "options": ["Converts response to JSON format", "Sends data to a file", "Deletes the file", "Changes a number to a string"],
+        "correctAnswer": "Converts response to JSON format"
+      },
+      {
+        "question": "What method can loop through all items in a JSON array?",
+        "options": [".map()", ".forEach()", ".loop()", ".run()"],
+        "correctAnswer": ".forEach()"
+      },
+      {
+        "question": "If your JSON has a missing quote, what kind of error will you get?",
+        "options": ["Syntax error", "Type error", "Logic error", "Reference error"],
+        "correctAnswer": "Syntax error"
+      },
+      {
+        "question": "Which website can you use to check if JSON is valid?",
+        "options": ["codepen.io", "jsonlint.com", "validator.net", "testjson.io"],
+        "correctAnswer": "jsonlint.com"
+      },
+      {
+        "question": "In the planetinfo.json example, what kind of data type is “planets”?",
+        "options": ["Object", "Array", "String", "Number"],
+        "correctAnswer": "Array"
+      },
+      {
+        "question": "What kind of data does the “description” key hold?",
+        "options": ["Boolean", "String", "Array", "Object"],
+        "correctAnswer": "String"
+      },
+      {
+        "question": "What kind of data does the “description” key hold?",
+        "options": ["Adds items to an array", "Reduces an array to a single value", "Removes duplicates", "Sorts an array alphabetically"],
+        "correctAnswer": "Reduces an array to a single value"
+      },
+      {
+        "question": "In the reduce function, what does acc stand for?",
+        "options": ["Accuracy", "Accumulator", "Account", "Access"],
+        "correctAnswer": "Accumulator"
+      },{
+        "question": "What does loc represent in the reduce method?",
+        "options": ["The last item", "The current item being checked", "The first item", "The largest item"],
+        "correctAnswer": "The current item being checked"
+      },
+      {
+        "question": "What planet was found to be the largest in the example?",
+        "options": ["Earth", "Jupiter", "Saturn", "Mercury"],
+        "correctAnswer": "Jupiter"
+      },
+      {
+        "question": " What planet was found to be the smallest in the example?",
+        "options": ["Mercury", "Venus", "Earth", "Mars"],
+        "correctAnswer": "Mercury"
+      },
+      {
+        "question": "Which of these is NOT true about JSON?",
+        "options": ["It can be used to store data", "It can be converted into a JavaScript object", "It can only store numbers", "It uses a text format"],
+        "correctAnswer": "It can only store numbers"
+      }
+    ]
+  }
+]

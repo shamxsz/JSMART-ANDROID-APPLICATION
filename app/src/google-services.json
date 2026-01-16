@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "632892817817",
+    "project_id": "jsmart-ee8b6",
+    "storage_bucket": "jsmart-ee8b6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632892817817:android:483a1f19199442e1285308",
+        "android_client_info": {
+          "package_name": "com.example.jsmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632892817817-qbpi1fc7uvn6bodd4hh42c366g3689rh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jsmart",
+            "certificate_hash": "aeca410ae99c431d775ff897b9f51fab59f7195f"
+          }
+        },
+        {
+          "client_id": "632892817817-ak75t3aue6q0n6ck0mn0a9s180jldil0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzyEutXMCcuCGJr8NDDJjS8WVhjFBBkIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632892817817-ak75t3aue6q0n6ck0mn0a9s180jldil0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

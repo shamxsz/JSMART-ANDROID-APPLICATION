@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/topbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                app:tint="@color/icon_tint"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/tvtitleQuiz"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:textAllCaps="true"
+                android:text=""
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@null"/>
+
+            <TextView
+                android:id="@+id/tvQuizScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0 / 0"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@null"/>
+
+    </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/svQuizDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="70dp"
+            android:scrollbars="vertical"
+            android:fadingEdge="none"
+            android:fadeScrollbars="false"
+            android:layout_marginTop="55dp"
+            android:scrollbarThumbVertical="@drawable/scrollbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        style="@style/SignUpButtonStyle"
+                        android:text="Submit Quiz"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRetake"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        style="@style/SignUpButtonStyle"
+                        android:text="Retake Quiz"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </FrameLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGotoNext"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    style="@style/LoginButtonStyle"
+                    android:text="GO TO NEXT MODULE"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout
+            android:id="@+id/quizFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LessonDetailActivity">
+
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/topbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:src="@drawable/back"
+            app:tint="@color/icon_tint"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLessonTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text=""
+            android:textColor="?android:textColorPrimary"
+            android:textSize="22sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/svLessonDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/tvLessonContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="?android:textColorPrimary"
+                android:textSize="18sp"
+                android:background="@null"/>
+
+
+            <LinearLayout
+                android:id="@+id/lessonExampleContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/example"/>
+
+
+            <TextView
+                android:id="@+id/tvLessonContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="5dp"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:background="@null"/>
+
+            <com.amrdeveloper.codeview.CodeView
+                android:id="@+id/codeView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:maxHeight="400dp"
+                android:padding="12dp"
+                android:gravity="top|start"
+                android:background="@drawable/exercise_cardview" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRun1"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                style="@style/SignUpButtonStyle"
+                android:text="TEST"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                style="@drawable/exercise_cardview">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/exercise_cardview"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/outputConsole"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="100dp"
+                        android:padding="8dp"
+                        android:text="Output will appear here..."
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:gravity="start|top"
+                        android:background="@color/transparent" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProceed"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center"
+            style="@style/SignUpButtonStyle"
+            android:text="PROCEED TO QUIZ"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="80dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/quizFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

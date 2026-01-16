@@ -1,0 +1,94 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Introduction",
+      "content": "JavaScript is the most popular programming language in the world.\n\nJavaScript is a programming language used to make web pages interactive.\n\nJavaScript, often abbreviated to JS, is the default language of the internet. But it doesn’t stop there, JavaScript powers your smart TV, works with the Internet of Things, and helps build cross-platform apps.\n\n➤\tWhy study JavaScript?\nJavaScript is one of the 3 languages all web developers must learn:\n\t1.\tHTML to define the content of web pages\n\t2.\tCSS to specify the layout of web pages\n\t3.\tJavaScript to program the behavior of web pages\n\n➤\tJavaScript Display Possibilities\nJavaScript can \"display\" data in different ways:\n\t•\tWriting into an HTML element, using innerHTML or innerText.\n\t•\tWriting into the HTML output using document.write().\n\t•\tWriting into an alert box, using window.alert().\n\t•\tWriting into the browser console, using console.log().",
+      "example": "<!DOCTYPE html>\n<html>\n<body>\n\n<h2 id=\"demo\">JavaScript Display Example</h2>\n\n<script>\n//Writing into an HTML element using innerHTML\ndocument.getElementById(\"demo\").innerHTML = \"Hello, World! (Displayed in HTML Element)\";\n\n//Writing into the HTML output (for testing, not recommended after page load)\ndocument.write(\"This text is written using document.write()<br>\");\n\n//Showing an alert box\nwindow.alert(\"This is an alert box using window.alert()!\");\n\n//Writing into the browser console\nconsole.log(\"Message logged in the console using console.log()\");\n</script>\n\n</body>\n</html>\n",
+      "content2": "➤Key Points:\n\t•\tinnerHTML / innerText → display inside an HTML element\n\t•\tdocument.write() → writes directly to the webpage (use mainly for testing)\n\t•\twindow.alert() → shows a popup message to the user\n\t•\tconsole.log() → displays output in the developer console (great for debugging)"
+    },
+    {
+      "id": 2,
+      "title": "Lesson 1: Variables",
+      "content": "Variables store data that can be used and changed in a program.\n\n➤\tDeclaring Variables\nIn JavaScript, there are three ways to declare a variable:\n\t•\tlet vs const vs var\n\t•\tlet allows you to change the value later.\n\t•\tconst is used when the value should not change.\n\t•\tvar was used in older versions but is now less recommended.\n\n➤\tVariable Naming Rules\n\t•\tMust start with a letter,_, or $.\n\t•\tCannot start with a number e.g. (let 1num = 5);.\n\t•\tCase-sensitive (Name and name are different).",
+      "example": "Example:\n\nlet age = 25; //This value can be updated.\n\nconst pi = 3.14; //Cannot be changed.\n\nvar name = \"Alice\"; // Works, but not the best practice"
+    },
+    {
+      "id": 3,
+      "title": "Lesson 2: Strings",
+      "content": "A string is a sequence of characters inside quotes.",
+      "example": "Example:\n\nlet text = \"Hello, World!\";\n\nconsole.log(text.length); //Output: 13\n\nconsole.log(text.toUpperCase()); //Outputs: HELLO, WORLD!\n\nconsole.log(text.indexOf(\"World\")); //Outputs:7",
+      "content2": "➤\tCommon Errors & Mistakes\n\n\t•\tForgetting quotes around strings:\nlet message = Hello; \nwhich results in : ERROR: Uncaught ReferenceError: Hello is not defined\n\n\t•\tCorrect way:\nlet message = \"Hello\";  \n"
+    },
+    {
+      "id": 4,
+      "title": "Lesson 3: Functions",
+      "content": "In JavaScript, a function is a reusable block of code that performs a specific task. It helps make your code cleaner, shorter, and easier to understand.\n\n➤\tDeclaring a Function\nTo create a function, use the function keyword, followed by a name, parentheses () (with optional parameters), and curly braces { } for the code.",
+      "example": "Example:\n\n// Function example that uses parameters and returns a result\n\nfunction greet(name) {\n\n  // The code inside runs only when the function is called\n  return \"Hello, \" + name + \"! Welcome to JavaScript.\";\n}\n\n// Calling the function\nconsole.log(greet(\"Taylor\")); \n// Output: Hello, Taylor! Welcome to JavaScript.\n\n// use: great for reusing code that performs one specific task\n" ,
+      "content2": "➤\tKey Points:\n\t•\tFunctions use the function keyword.\n\t•\tCode runs only when the function is called.\n\t•\treturn sends a value back.\n\t•\tParameters let you pass data into a function."
+    },
+    {
+      "id": 5,
+      "title": "Lesson 4: Conditions",
+      "content": "Conditions let your program make decisions.\nThey allow code to run differently depending on whether something is true or false.\n\n➤\tDeclaring Conditions\nYou can use if, else if, and else statements to check values and run different code blocks.\n\nComparison Operators\n➤\tOperator & Meaning\n==  Equal to (loose comparison)\n===  Equal and same type (strict comparison)\n!=  Not equal\n<, >, <=, >=  Less than, greater than, etc.\n➤\tCommon Errors & Mistakes\nUsing a single = instead of == or ===:\nif (age = 18) {  // which results in error because a single = is used instead of == or ===\n",
+      "example": "Example:\n\n// Example of conditional statements\nfunction compareNumbers(a, b) {\n  if (a < b) {\n    console.log(\"a is less than b\");\n  } else if (a == b) {\n    console.log(\"a equals b\");\n  } else {\n    console.log(\"a is greater than b\");\n  }\n}\n\ncompareNumbers(5, 10); // Output: a is less than b\n// use: helpful when deciding what action to take in a program\n",
+      "content2": "➤\tKey Points:\n\t•\tf checks a condition.\n\t•\telse if runs if the first is false but this one is true.\n\t•\telse runs when all are false.\n\t•\tComparison symbols:\n\t\t\t•\t< less than\n\t\t\t•\t> greater than\n\t\t\t•\t== equal to"
+    },
+    {
+      "id": 6,
+      "title": "Lesson 5: Arrays",
+      "content": "An array is a special kind of variable that can hold many values at once.\nInstead of creating many variables for different items, you can store them all together in one array.\n\nIt is very useful when you need to store lists such as names, numbers, or items.\n\n➤\tDeclaring an Array\nYou can create an array by placing your values inside square brackets [ ], separated by commas.\n\n➤\tAccessing Array Elements\nYou can get any item from an array by using its index number inside square brackets.\n\n➤\tChanging an Array Element\nYou can change an existing item by using its index number.\n\n➤\tArray Length\nUse the .length property to find out how many items are inside the array.\n",
+      "example": "Example:\n\nlet cars = [\"Saab\", \"Volvo\", \"BMW\"];\n\t//The array’s name is cars.\n\t//It has three values: \"Saab\", \"Volvo\", and \"BMW\".\n \n// Accessing Array Elements\nconsole.log(cars[0]); // Output: Saab\n\n// Changing an Array Element\ncars[0] = \"Toyota\";\nconsole.log(cars);\n// Output: [\"Toyota\", \"Volvo\", \"BMW\"]\n\n // Array Length\nconsole.log(cars.length); // Output: 3\n",
+      "content2": "➤\tKey Points:\n\t•\tArrays use square brackets [ ] to store multiple values.\n\t•\tEach value in an array has a position number, called an index.\n\t•\tThe first item starts at index 0 (not 1)."
+    },
+    {
+      "id": 7,
+      "title": "Lesson 6: Objects",
+      "content": "An object in JavaScript is a type of variable that can store many related values together.\n\nInstead of using numbers as positions like in arrays, objects use names (called keys or property names) to describe each value.\n\n➤\tDeclaring an Object\nYou create an object using curly braces { }, and inside it, you write name–value pairs separated by commas.\n\n\t•\tEach pair is called a property.\n\t•\tThe name part is called the key.\n\t•\tThe value part is the data stored in that property.\n\nA car object can have:\n\t\t\t\ttype: “Sedan”\n\t\t\t\tmodel: “Honda Civic LX”\n\t\t\t\tcolor: “Black”\n",
+      "example": "Example: // Example object with properties and a method\n\nlet car = {\n  type: \"Sedan\",\n  model: \"Honda Civic\",\n  color: \"Black\",\n  start: function() {\n    console.log(\"The car is starting...\");\n  }\n};\n\nconsole.log(car.model); // Access value → \"Honda Civic\"\ncar.start(); // Calls method → \"The car is starting...\"\n// use: organize data for real-world things like cars, students, or users",
+      "content2": "➤\tKey Points:\n\t•\tAn object holds data as name: value pairs.\n\t•\tProperty names are usually strings, and their values can be numbers, strings, arrays, booleans, or even other objects.\n\t•\tYou can have many properties inside one object, separated by commas.\n\t•\tYou can access property values using:\n\t•\tDot notation: objectName.propertyName\n\t•\tBracket notation: objectName[\"propertyName\"]\n\t•\tObjects can also contain functions, which are then called methods.\n"
+    },
+    {
+      "id": 8,
+      "title": "Lesson 7: Loops",
+      "content": "A loop in JavaScript is used to repeat a block of code several times.\n\nInstead of writing the same line again and again, a loop lets you run it automatically until a certain condition is met.\n\t•\tA loop repeats a task as long as a condition is true.\n\t•\tWhen the condition becomes false, the loop stops.\n\nTypes of Loops:\n\t1.\tfor loop – repeats a block of code a specific number of times\n\t2.\twhile loop – repeats as long as a condition is true\n\t3.\tdo…while loop – runs the code once, then checks the condition\n",
+      "example": "Example:\n\n//Example showing a for loop\nfor (let i = 1; i <= 5; i++) {\n  // i starts at 1, runs while i <= 5, adds 1 each time\n  console.log(\"Number: \" + i);\n}\n// Output:\n// Number: 1\n// Number: 2\n// Number: 3\n// Number: 4\n// Number: 5\n// use: loops are great for repeating actions like printing, counting, or checking lists\n",
+      "content2": "➤\tKey Points:\n\t•\tLoops are used to repeat code automatically.\n\t•\tUse break to stop a loop early.\n\t•\tUse continue to skip one step in a loop.\n"
+    },
+    {
+      "id": 9,
+      "title": "Lesson 8: Classes: ",
+      "content": "A class is like a blueprint for creating objects.\nIt defines what properties (data) and methods (actions) an object should have.\n\n➤\tCreating a Class\nUse the class keyword followed by a name and curly braces { }.\n\n➤\tConstructor\nThe constructor is a special function inside a class.\nIt runs automatically when you create a new object from that class and is used to set up initial values.\n\n➤\tGetter (Computed Property)\nA getter looks like a property but actually runs code to calculate a value.\n\n➤\tMethods\nMethods are functions inside a class that make objects perform actions.",
+      "example": "Example:\n\n// Example: A class that represents a Rectangle\n\nclass Rectangle {\n  constructor(width, height) {\n\n    // constructor sets initial values\n\n    this.width = width;\n    this.height = height;\n  }\n\n  get area() {\n\n    // getter calculates area when called\n    return this.width * this.height;\n  }\n}\n\n// create an object (instance) from the class\n\nconst rect = new Rectangle(5, 10);\nconsole.log(rect.area); // Output: 50\n\n// use: easily create many rectangles with same structure\n",
+      "content2": "➤\tKey Points:\n•Class = Blueprint for objects\n•Constructor = Initializes values\n•this = Refers to the current object\n•Getter = Calculates a value automatically\n•Method = Function inside a class"
+    },
+    {
+      "id": 10,
+      "title": "Lesson 9: Modules: ",
+      "content": "Modules help organize your JavaScript code by splitting it into smaller, reusable files.\n\nEach file can export code and import it into another file.\n\n➤\tExporting Code\nUse the export keyword to share a function, class, or variable.\n\n➤\tImporting Code\nUse the import keyword to bring code from another file.",
+      "example": "Example:\n\n// File: mathTools.js\n\nexport function add(a, b) {\n\n  // export makes this function available in other files\n\n  return a + b;\n}\n\n// File: main.js\n\nimport { add } from './mathTools.js'; \n\n// import brings in the function from another file\n\nconsole.log(add(2, 3)); // Output: 5\n\n// use: organize reusable functions or classes in separate files\n",
+      "content2": "➤\tKey Points:\n\t•\texport → shares code\n\t•\timport → brings code in\n\t•\ttype=\"module\" → tells browser to use modules\n\t•\tMakes code clean, organized, and reusable"
+    },
+    {
+      "id": 11,
+      "title": "Lesson 10: Scope",
+      "content": "Scope defines where a variable or function can be used in your code.\n\n➤\tGlobal Scope\nVariables declared outside any function can be used anywhere.\n\n➤\tLocal Scope\nVariables declared inside a function or block work only there.\n\n➤\tBlock Scope (let and const)\nlet and const only work inside the block { } where they are declared.\n\n➤\tthis Keyword\nIn a class, this refers to the current object.\nIf it loses meaning (like in an event), use .bind(this) or arrow functions.\n\n➤\tArrow Functions and this\nArrow functions don’t create their own this, so they automatically use the correct one.",
+      "example": "Example:\n\nlet globalVar = \"I’m global\"; // global scope — can be used anywhere\n\nfunction showScope() {\n  let localVar = \"I’m local\"; // local scope — works only inside function\n  if (true) {\n    let blockVar = \"I’m block-scoped\"; // block scope — only inside this block\n    console.log(blockVar);\n  }\n  console.log(localVar);\n}\n\nshowScope();\nconsole.log(globalVar);\n// use: control variable visibility to avoid conflicts\n",
+      "content2": "➤\tKey Points:\n\t•\tGlobal scope → accessible everywhere\n\t•\tLocal/block scope → inside { } only\n\t•\ttry...catch → handles errors safely\n\t•\tthis → current object reference\n\t•\tArrow functions → fix this scope issues"
+    },
+    {
+      "id": 12,
+      "title": "Lesson 11: Math",
+      "content": "The Math object provides built-in tools for calculations like square roots, angles, and distances.\n\n➤\tVec Class Example\nA vector represents a point or direction with x and y values.\n\n➤\tFinding Distance\nUse the Pythagorean theorem to find distance between two points.\n\nFinding Angles\nUse Math.atan2(y, x) to find the angle of a vector in radians.\n\n\t•\tMath.sqrt(x) → Square root\n\t•\tMath.abs(x) → Absolute value\n\t•\tMath.sin(x) → Sine (for Y movement)\n\t•\tMath.cos(x) → Cosine \n\t(for X movement)\n\t•\tMath.atan2(y, x) → Finds angle\n\t•\tMath.PI → π (3.1416)",
+      "example": "Example:\n\n//Example of using Math to find distance between two points\n\nconst x1 = 0, y1 = 0;\nconst x2 = 3, y2 = 4;\n\nconst distance = Math.sqrt((x2 - x1)**2 + (y2 - y1)**2);\nconsole.log(distance); // Output: 5\n\n// use: helpful for geometry, movement, and animations\n",
+      "content2": "➤\tKey Points:\n\t•\tMath helps with calculations\n\t•\tDistance = √((x₂ − x₁)² + (y₂ − y₁)²)\n\t•\tAngle = Math.atan2(y, x)\n\t•\tRadians → Degrees = × 180 / π\n\t•\tUsed for movement, direction, and \n\tanimations"
+    },
+    {
+      "id": 13,
+      "title": "Lesson 12: JSON",
+      "content": "JSON (JavaScript Object Notation) is a simple text format for storing and sharing data.\nIt’s easy for both humans and computers to read.\n\n➤\tStructure:\n\t•\t{ } → Objects (key-value pairs)\n\t•\t[ ] → Arrays (lists)\n\n➤\tLoading JSON with fetch()\nUse fetch() to load data from a JSON file.\n\n➤\tError Handling\nUse .catch() to handle problems like missing data or typos.\n\n➤\tFinding Data in JSON\nYou can use array methods like reduce() to find specific information.",
+      "example": "Example:\n\n//Example of fetch and display JSON data\nfetch('./students.json')\n  .then(response => response.json()) // converts file to JS object\n  .then(data => {\n    console.log(data.name); // access data from JSON\n  })\n  .catch(error => console.error(error));\n// use: load external data such as user info or quiz content\n",
+      "content2": "➤\tKey Points:\n\t•\tJSON = Data format for sharing info\n\t•\t{ } = Objects, [ ] = Arrays\n\t•\tfetch() = loads JSON\n\t•\t.then() = runs after success\n\t•\t.catch() = handles errors\n\t•\treduce() = finds one result \n\t(like largest/smallest)"
+    }
+  ]
+}

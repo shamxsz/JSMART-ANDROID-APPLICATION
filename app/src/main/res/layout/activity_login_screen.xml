@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivLoginLogo"
+            android:layout_width="126dp"
+            android:layout_height="138dp"
+            app:srcCompat="@drawable/logob"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:id="@+id/tvWelcome2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="WELCOME TO JSMART!"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvReady2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Log in to continue your learning journey."
+            android:textColor="?android:textColorPrimary"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="14dp"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/etEmailAddress"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:background="@drawable/sgnpbtn"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:layout_margin="4dp"/>
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:background="@drawable/sgnpbtn"
+                android:ems="10"
+                android:layout_margin="4dp"
+                android:hint="Password "
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="2dp">
+
+            <CheckBox
+                android:id="@+id/cbShowPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="start"
+                android:buttonTint="?android:textColorPrimary"
+                android:text="Show Password"
+                android:textColor="?android:textColorPrimary"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="14sp"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            style="@style/LoginButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="Or connect using"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="18sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnSignInWithGoogle"
+            style="@style/CardViewStyle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@null">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/g_logo"
+                    android:background="@null"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Google"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:background="@null"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/tvNewHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Here?"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Register"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

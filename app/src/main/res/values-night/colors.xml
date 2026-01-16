@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="icon_tint">#FFFFFF</color>
+    <color name="bg">#000000</color>
+    <color name="topbar">#808080</color>
+    <color name="icon_camera">#000000</color>
+    <color name="icon_profile">#FFFFFF</color>
+
+    <color name="card">#000000</color>
+    <color name="strokeCard">#FFFFFF</color>
+    <color name="cardExercise">#252525</color>
+
+    <color name="progressBar">#FFFFFF</color>
+
+</resources>

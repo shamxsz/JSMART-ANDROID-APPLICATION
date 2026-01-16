@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JSmart App Tutorial"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"
+        android:background="@null"/>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        android:background="@null"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@null">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/home2"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use to go to Home Screen wherein you can see your progress."
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:background="@null"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@null">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/module2"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use to go to the Module Overview Screen, you can choose what lesson to open. \nMake sure click the 'Proceed to Quiz' to save progress"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:background="@null"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@null">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/quiz2"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use to go to the Quiz Overview Screen, you can choose what quiz to open."
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@null">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/exercise2"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use to go to the Exercise Overview Screen, you can choose what exercise to open."
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@null">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/feedback2"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can see this inside the exercise screen, tap to open the assessment screen and check your feedback."
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@null">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/profile3"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Found at the top-right corner when you open the app. Tap to view your profile, stars, level, and certification."
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:background="@null"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@null">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sign_out1"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Found at the top-left corner when you open the app. Tap to sign out from the application."
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:background="@null"/>
+        </LinearLayout>
+    </ViewFlipper>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@null">
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowleft"
+            android:contentDescription="Previous slide"
+            android:background="@null"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGotIt"
+            style="@style/SignUpButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Got it"
+            android:layout_marginHorizontal="16dp"
+            android:background="@null"/>
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowright"
+            android:contentDescription="Next slide"
+            android:background="@null"/>
+    </LinearLayout>
+</LinearLayout>

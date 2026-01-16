@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="?colorSecondary"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="15dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                app:tint="@color/icon_tint"
+                android:background="@null"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/edit"
+                app:tint="@color/icon_tint"
+                android:background="@null"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivProfilePicture"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@null"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile2"
+                app:shapeAppearanceOverlay="@style/CircleShape"
+                app:strokeColor="@color/icon_tint"
+                app:strokeWidth="3dp"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:id="@+id/btnChangePhoto"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="4dp"
+                android:background="@drawable/circle_frame"
+                android:src="@drawable/camera"
+                android:scaleType="centerInside"
+                app:tint="@color/icon_camera"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Guest"
+            android:textAllCaps="true"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:layout_gravity="center">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                style="@style/CardViewStyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/star"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvTotalStar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="45sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Stars"
+                        android:textColor="?android:textColorPrimary"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="16dp"
+                style="@style/CardViewStyle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/ivLevelIcon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@null"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="25dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level"
+                        android:textColor="?android:textColorPrimary"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CERTIFICATION"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:background="@drawable/lgnbtn">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="DOWNLOAD CERTIFICATE"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:id="@+id/ibDownloadCert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/download"
+                    android:background="@color/transparent"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tvCertMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Finish all required lessons,quizzes, and code exercise to download your certificate"
+            android:textSize="10sp"
+            android:textColor="@color/gray"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
