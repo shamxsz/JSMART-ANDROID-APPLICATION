@@ -20,4 +20,5 @@ JSMART is an Android application designed to help users learn JavaScript interac
 - Gemini API (for assessment feedback)
 
 ## Download the App
-You can download the latest APK [here](https://drive.google.com/file/d/15_MSYUS7GrEUDKzJ5R-ipyrMzQXhkqGM/view?usp=sharing) and install it on Android devices.
+You can download the latest APK [here](https://drive.google.com/file/d/1rMleLCuQEoacJuoqggux-tPYl23q6a4S/view?usp=sharing) and install it on Android devices.
+
